@@ -10,8 +10,8 @@ $a=rand(2,9); $b=rand(2,9); $c=$a+$b;
 $message="";
 $captchamsg="";
 $history = "";
-$conn = mysqli_connect("localhost","dB_username","dB_password");
-mysqli_select_db($conn, "fmail");
+$conn = mysqli_connect("localhost","a1100935_fmail","password");
+mysqli_select_db($conn, "a1100935_fmail");
 $sql = 'SELECT COUNT(*) FROM sent';
 $res = mysqli_query($conn, $sql);
 $history = mysqli_fetch_array($res);
@@ -27,8 +27,8 @@ $headers = "From: ".$_POST['from']. "\r\n" .
 "BCC: fastmail@softysolutions.in";
 $retval = false;
 if($_POST['captchaver'] == $_POST['captcha']){
-$conn = mysqli_connect("localhost","dB_username","dB_password");
-mysqli_select_db($conn, "fmail");
+$conn = mysqli_connect("localhost","a1100935_fmail","password");
+mysqli_select_db($conn, "a1100935_fmail");
 // (`to`, `from`, `subject`, `message`, `ip`, `date`) 
 $sql = "INSERT INTO `a1100935_fmail`.`sent` VALUES ('".$_POST['to']."', '".$_POST['from']."', '".$_POST['sub']."','".$_POST['msg']."','".$_SERVER['REMOTE_ADDR']."', '".date('Y-m-d h:i:s')."')";
 $result = mysqli_query($conn, $sql);
