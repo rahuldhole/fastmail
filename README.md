@@ -1,4 +1,4 @@
-Fastmail Service
+Fastmail Service (http://fastmail.softysolutions.in)
 ========
 
 This is a emergency email service to send email quickly at very low internet speed.
