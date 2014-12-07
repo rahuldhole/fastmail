@@ -7,4 +7,4 @@ see the live demonstration of this project is available on http://fastmail.softy
 import a1100935_fmail.sql file in your database
 change the username and password for database connection in files sendmail.php and admin.php.
 enjoy the email service :)
-licensed under the SGGS IE & T Nanded, Maharashtra, India
+under the SGGS IE & T Nanded, Maharashtra, India
