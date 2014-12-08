@@ -74,7 +74,7 @@ Message<br />&nbsp&nbsp&nbsp&nbsp<textarea rows="7" cols="70" name = "msg"  size
 <input type = "hidden" name = "captchaver" value = "<?php echo $c; ?>">
 <input type = "submit" value = "Send mail">
 </form>
-<a href = "index.php">Click here to refresh</a>
+<a href = "sendmail.php">Click here to refresh</a>
 </span>
 </div>
 </body>
